@@ -5,4 +5,4 @@ from django.http import HttpResponse, HttpResponseRedirect
 
 
 def index(response):
-    return render(response, "templates/main/base.html")
+    return render(response, "main/base.html", {})
