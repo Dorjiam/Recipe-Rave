@@ -1,4 +1,24 @@
 * {
 	font-family: "Montserrat";
-	font-weight: 500;
+}
+
+#navbar-links {
+	margin-left: auto;
+	margin-right: 30px;
+}
+
+#get-started-button {
+	border: 5px linear-gradient(45deg, teal, blue);
+	border-radius: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-left: 20px;
+}
+
+.navbar-brand {
+	font-weight: 600;
+}
+
+#brand-footer {
+	background-color: blue;
 }
