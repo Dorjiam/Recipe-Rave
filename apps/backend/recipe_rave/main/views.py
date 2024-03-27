@@ -3,6 +3,18 @@ from django.http import HttpResponse, HttpResponseRedirect
 
 # Create your views here.
 
+global_dict = {
+    "user_logged_in": False
+}
 
-def index(response):
-    return render(response, "base.html", {})
+
+def home(response):
+    return render(response, "home.html", global_dict)
+
+
+def login(response):
+    return render(response, "login.html", global_dict)
+
+
+def sign_up(response):
+    return render(response, "sign-up.html", global_dict)

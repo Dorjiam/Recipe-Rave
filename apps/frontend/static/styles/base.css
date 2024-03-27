@@ -1,24 +1,28 @@
-* {
+@font-face {
 	font-family: "Montserrat";
+	src: url("../assets/fonts/Montserrat.woff") format("woff");
 }
 
-#navbar-links {
-	margin-left: auto;
-	margin-right: 30px;
+* {
+	font-family: "Montserrat", sans-serif;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	color: white;
 }
 
-#get-started-button {
-	border: 5px linear-gradient(45deg, teal, blue);
-	border-radius: 20px;
-	padding-right: 20px;
-	padding-left: 20px;
-	margin-left: 20px;
+::selection {
+	background-color: orange;
+	color: #fff;
 }
 
-.navbar-brand {
-	font-weight: 600;
-}
-
-#brand-footer {
-	background-color: blue;
+body {
+	height: 100vh;
+	background-color: black;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+		url("../assets/images/background-2.jpg");
+	background-size: cover;
+	background-position: center;
+	backdrop-filter: blur(0px);
+	overflow-y: hidden;
 }
