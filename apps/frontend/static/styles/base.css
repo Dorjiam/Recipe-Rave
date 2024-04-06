@@ -16,11 +16,15 @@
 	color: #fff;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	height: 100vh;
 	background-color: black;
 	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-		url("../assets/images/background-2.jpg");
+		url("../assets/images/backgrounds/background-2.jpg");
 	background-size: cover;
 	background-position: center;
 	backdrop-filter: blur(0px);

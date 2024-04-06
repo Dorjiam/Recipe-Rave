@@ -1,0 +1,56 @@
+{% load static %}
+<header>
+	<div class="navbar">
+		<div class="logo">
+			<a href="/home"
+				><img
+					src="{% static 'assets/images/icons/fish.png' %}"
+					alt=""
+					class="icon"
+				/>Recipe Rave</a
+			>
+		</div>
+		<ul class="navbar-links">
+			<li><a href="/home" class="navbar-link">Home</a></li>
+			<li><a href="" class="navbar-link">About</a></li>
+			<li><a href="" class="navbar-link">Services</a></li>
+			<li><a href="" class="navbar-link">Contact</a></li>
+			<li><a href="" class="navbar-link">Explore</a></li>
+		</ul>
+		{% if user_logged_in == False %}
+		<div class="navbar-buttons">
+			<a href="/login" class="button" id="navbar-login-button">Login</a>
+			<a href="/signup" class="button" id="navbar-sign-up-button">Sign up</a>
+		</div>
+		{% else %}
+		<div class="user-avatar">
+			<a href="/user/{{username}}">
+				<img
+					src="{% static 'assets/images/avatars/003-cat.png' %}"
+					alt="User Avatar"
+					class="user-image"
+				/>
+			</a>
+		</div>
+		{% endif %}
+		<div class="toggle-button">
+			<i class="fa-solid fa-bars"></i>
+		</div>
+	</div>
+
+	<div class="dropdown-menu">
+		<li><a href="/home" class="navbar-link">Home</a></li>
+		<li><a href="" class="navbar-link">About</a></li>
+		<li><a href="" class="navbar-link">Services</a></li>
+		<li><a href="" class="navbar-link">Contact</a></li>
+		<li><a href="" class="navbar-link">Explore</a></li>
+		{% if user_logged_in == True %}
+		<li>
+			<a href="/login" class="button" id="dropdown-login-button">Login</a>
+		</li>
+		<li>
+			<a href="/signup" class="button" id="dropdown-sign-up-button">Sign up</a>
+		</li>
+		{% endif %}
+	</div>
+</header>

@@ -1,0 +1,217 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body,
+input,
+button {
+	font-size: 1rem;
+}
+
+body {
+	color: white;
+}
+
+input,
+button {
+	border: none;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* ================ Brand ================ */
+.navbar-links,
+.navbar-buttons {
+	display: none;
+}
+
+/* ================ Login ================ */
+.sign-up {
+	position: relative;
+	height: fit-content;
+	display: grid;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.sign-up-img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.sign-up-form {
+	position: relative;
+	border: 2px solid white;
+	margin-inline: 1.5rem;
+	padding: 2.5rem 1.5rem;
+	border-radius: 1rem;
+	backdrop-filter: blur(16px);
+}
+
+.sign-up-title {
+	text-align: center;
+	font-size: 1.75rem;
+	font-weight: 500;
+	margin-bottom: 2rem;
+}
+
+.sign-up-content,
+.sign-up-box {
+	display: grid;
+}
+
+.sign-up-content {
+	row-gap: 1.75rem;
+	margin-bottom: 1.5rem;
+}
+
+.sign-up-box {
+	grid-template-columns: max-content 1fr;
+	align-items: center;
+	column-gap: 0.75rem;
+	border-bottom: 2px solid white;
+}
+
+.sign-up-icon,
+.sign-up-eye {
+	font-size: 1.25rem;
+}
+
+.sign-up-input {
+	width: 100%;
+	padding-block: 0.8rem;
+	background: none;
+	color: white;
+	position: relative;
+	z-index: 1;
+}
+
+.sign-up-box-input {
+	position: relative;
+}
+
+.sign-up-label {
+	position: absolute;
+	left: 0;
+	top: 13px;
+	font-weight: 500;
+	transition: top 0.3s, font-size 0.3s;
+}
+
+.sign-up-eye {
+	position: absolute;
+	right: 0;
+	top: 18px;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.sign-up-box:nth-child(2) input {
+	padding-right: 1.8rem;
+}
+
+.sign-up-check,
+.sign-up-check-group {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sign-up-check {
+	margin-bottom: 1.5rem;
+}
+
+.sign-up-check-label,
+.sign-up-forgot,
+.sign-up-sign-up {
+	font-size: 0.813rem;
+}
+
+.sign-up-check-group {
+	column-gap: 0.5rem;
+}
+
+.sign-up-check-input {
+	width: 16px;
+	height: 16px;
+}
+
+.sign-up-forgot {
+	color: white;
+}
+
+.sign-up-forgot:hover {
+	text-decoration: underline;
+}
+
+.sign-up-button {
+	width: 100%;
+	padding: 0.7rem;
+	border-radius: 0.5rem;
+	background-color: orange;
+	font-weight: 500;
+	cursor: pointer;
+	margin-bottom: 2rem;
+	font-weight: 800;
+	transition-duration: 0.3s;
+}
+
+.sign-up-button:hover {
+	box-shadow: 0px 0px 10px orange;
+	letter-spacing: 2px;
+}
+
+.sign-up-sign-up {
+	text-align: center;
+}
+
+.sign-up-sign-up a {
+	color: white;
+	font-weight: 500;
+}
+
+.sign-up-sign-up a:hover {
+	text-decoration: underline;
+}
+
+/* Input focus move up label */
+.sign-up-input:focus + .sign-up-label {
+	top: -12px;
+	font-size: 0.813rem;
+}
+
+/* Input focus sticky top label */
+.sign-up-input:not(:placeholder-shown).sign-up-input:not(:focus)
+	+ .sign-up-label {
+	top: -12px;
+	font-size: 0.813rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (min-width: 576px) {
+	.sign-up {
+		justify-content: center;
+	}
+	.sign-up-form {
+		width: 432px;
+		padding: 3rem 3rem 3.5rem;
+		border-radius: 1.5rem;
+	}
+	.sign-up-title {
+		font-size: 2rem;
+	}
+}

@@ -1,0 +1,20 @@
+.home-body {
+	margin: 12rem 5rem;
+}
+
+.home-body span {
+	color: orange;
+}
+
+.home-body .title {
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.home-body .description {
+	margin-left: 20px;
+	width: 30rem;
+	font-size: 20px;
+	line-height: 1.5;
+	opacity: 80%;
+}
