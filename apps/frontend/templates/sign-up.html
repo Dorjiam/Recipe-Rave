@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign up</title>
+		<!-- Remix Icon -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+		<!-- Stylesheets -->
+		<link
+			rel="stylesheet"
+			href="{% static 'styles/base.css' %}?{% now 'U' %}"
+		/>
+		<link
+			rel="stylesheet"
+			href="{% static 'styles/footer.css' %}?{% now 'U' %}"
+		/>
+		<link
+			rel="stylesheet"
+			href="{% static 'styles/navbar.css' %}?{% now 'U' %}"
+		/>
+		<link
+			rel="stylesheet"
+			href="{% static 'styles/sign-up.css' %}?{% now 'U' %}"
+		/>
+	</head>
+	<body>
+		{% include 'components/header.html' %}
+		<main>
+			<div class="sign-up">
+				<form action="" class="sign-up-form" method="post">
+					<h1 class="sign-up-title">Sign up</h1>
+
+					<div class="sign-up-content">
+						<!-- Email -->
+						<div class="sign-up-box">
+							<i class="ri-mail-line"></i>
+
+							<div class="sign-up-box-input">
+								<input
+									type="email"
+									required
+									class="sign-up-input"
+									id="sign-up-email"
+									placeholder=" "
+									autocomplete="off"
+								/>
+								<label for="sign-up-email" class="sign-up-label">Email</label>
+							</div>
+						</div>
+						<!-- Username -->
+						<div class="sign-up-box">
+							<i class="ri-user-3-line sign-up-icon"></i>
+
+							<div class="sign-up-box-input">
+								<input
+									type="text"
+									required
+									class="sign-up-input"
+									id="sign-up-username"
+									placeholder=" "
+									autocomplete="off"
+								/>
+								<label for="sign-up-username" class="sign-up-label"
+									>Username</label
+								>
+							</div>
+						</div>
+						<!-- Password -->
+						<div class="sign-up-box">
+							<i class="ri-lock-2-line sign-up-icon"></i>
+
+							<div class="sign-up-box-input">
+								<input
+									type="password"
+									required
+									class="sign-up-input"
+									id="sign-up-pass"
+									placeholder=" "
+								/>
+								<label for="sign-up-pass" class="sign-up-label">Password</label>
+								<i class="ri-eye-off-line sign-up-eye" id="sign-up-eye"></i>
+							</div>
+						</div>
+						<!-- Confirm Password -->
+						<div class="sign-up-box">
+							<i class="ri-checkbox-line"></i>
+
+							<div class="sign-up-box-input">
+								<input
+									type="password"
+									required
+									class="sign-up-input"
+									id="sign-up-pass-confirm"
+									placeholder=" "
+								/>
+								<label for="sign-up-pass-confirm" class="sign-up-label"
+									>Confirm Password</label
+								>
+								<i
+									class="ri-eye-off-line sign-up-eye"
+									id="sign-up-confirm-eye"
+								></i>
+							</div>
+						</div>
+					</div>
+
+					<button type="submit" class="sign-up-button">Sign up</button>
+
+					<p class="sign-up-sign-up">
+						Already have an account? <a href="/login">Login</a>
+					</p>
+				</form>
+			</div>
+		</main>
+		{% include 'components/footer.html' %}
+		<script src="{% static 'js/sign-up.js' %}?{% now 'U' %}"></script>
+	</body>
+</html>
