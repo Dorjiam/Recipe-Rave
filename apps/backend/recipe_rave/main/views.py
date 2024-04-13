@@ -8,6 +8,10 @@ global_dict: dict = {
 }
 
 
+def index(response):
+    return HttpResponseRedirect("/home")
+
+
 def home(response):
     return render(response, "home.html", global_dict)
 

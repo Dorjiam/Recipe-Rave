@@ -1,20 +1,39 @@
 .home-body {
 	margin: 12rem 5rem;
+	width: fit-content;
 }
 
-.home-body span {
+.home-body .brand {
 	color: orange;
 }
 
 .home-body .title {
 	font-weight: bold;
 	font-size: 40px;
+	width: fit-content;
+	display: inline-block;
 }
 
 .home-body .description {
 	margin-left: 20px;
-	width: 30rem;
+	max-width: 30rem;
 	font-size: 20px;
 	line-height: 1.5;
 	opacity: 80%;
+	text-wrap: wrap;
+}
+
+@media (max-width: 695px) {
+	.home-body {
+		width: 80vw;
+	}
+
+	.home-body .title {
+		text-align: center;
+		text-wrap: wrap;
+	}
+
+	.home-body span {
+		display: block;
+	}
 }
