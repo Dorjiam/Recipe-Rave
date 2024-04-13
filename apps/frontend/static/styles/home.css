@@ -1,31 +1,21 @@
 .home-body {
 	margin: 12rem 5rem;
-<<<<<<< HEAD
 	width: fit-content;
 }
 
-.home-body .brand {
-=======
-}
-
 .home-body span {
->>>>>>> 44e4a6112fb2c1b083e9e106b347c1882387c8c4
 	color: orange;
 }
 
 .home-body .title {
 	font-weight: bold;
 	font-size: 40px;
-<<<<<<< HEAD
 	width: fit-content;
 	display: inline-block;
-=======
->>>>>>> 44e4a6112fb2c1b083e9e106b347c1882387c8c4
 }
 
 .home-body .description {
 	margin-left: 20px;
-<<<<<<< HEAD
 	max-width: 30rem;
 	font-size: 20px;
 	line-height: 1.5;
@@ -46,10 +36,4 @@
 	.home-body span {
 		display: block;
 	}
-=======
-	width: 30rem;
-	font-size: 20px;
-	line-height: 1.5;
-	opacity: 80%;
->>>>>>> 44e4a6112fb2c1b083e9e106b347c1882387c8c4
 }
