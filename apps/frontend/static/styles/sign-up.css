@@ -54,11 +54,19 @@ img {
 
 .sign-up-form {
 	position: relative;
+<<<<<<< HEAD
+=======
+	background-color: hsla(0, 0%, 10%, 0.1);
+>>>>>>> 44e4a6112fb2c1b083e9e106b347c1882387c8c4
 	border: 2px solid white;
 	margin-inline: 1.5rem;
 	padding: 2.5rem 1.5rem;
 	border-radius: 1rem;
+<<<<<<< HEAD
 	backdrop-filter: blur(16px);
+=======
+	backdrop-filter: blur(8px);
+>>>>>>> 44e4a6112fb2c1b083e9e106b347c1882387c8c4
 }
 
 .sign-up-title {
