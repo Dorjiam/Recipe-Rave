@@ -1,4 +1,4 @@
-footer {
+.footer-wrap {
 	position: absolute;
 	bottom: 0;
 	width: 100vw;
@@ -6,8 +6,8 @@ footer {
 	display: flex;
 	justify-content: center;
 	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(15px);
 	color: white;
+	backdrop-filter: blur(15px);
 	font-weight: 370;
 }
 
